@@ -23,14 +23,42 @@
 }
 
 .popup {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 500px;
-	background-color: #c0c0c0;
-	border: 2px solid #000;
-	box-shadow: 4px 4px 0px #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ececec;
+    border: 2px solid #000;
+    box-shadow: 4px 4px #555;
+    font-family: 'Fira Mono', monospace;
+
+    width: 500px;
+    max-width: 90vw;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+/* phones */
+@media (max-width: 600px) {
+    .popup {
+        width: 85vw;
+        height: auto;
+        max-height: 70vh;
+        aspect-ratio: 4 / 3;
+    }
+
+    .popup-content h1 {
+        font-size: 1.25rem;
+    }
+
+    .popup-content p {
+        font-size: 0.9rem;
+    }
+
+    .roblox-icon {
+        width: 36px;
+        height: 36px;
+    }
 }
 
 .popup-titlebar {
